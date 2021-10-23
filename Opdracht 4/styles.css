@@ -1,0 +1,23 @@
+body {
+    color: red;
+}
+
+.black-border{
+    border: 5px solid black;
+}
+
+#green-background {
+    background-color: green;
+}
+
+.nav-bar {
+     font-family: Arial, Helvetica, sans-serif; font-size: 10px; border-top: 5px solid black; border-bottom: 5px solid yellow; border-radius: 50%; text-align: center;
+}
+
+.extra {
+    background-color: yellow; border: 10px solid red; position:absolute; bottom: 0; width: 100%;
+}
+
+.color-list {
+    color: blueviolet; padding: 5em;
+}
