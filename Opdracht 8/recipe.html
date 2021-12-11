@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Dit is the Recipe form page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Recipe Form</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">
+                        Home
+                    </a></li>
+                <li><a href="about.html">
+                        About
+                    </a></li>
+                <li><a href="contact.html">
+                        Contact
+                    </a></li>
+                <li><a href="recipe.html">
+                        Recipe
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Here we have the recipe form</h1>
+        <form name="recipe" method="post" data-netlify="true" class="testform">
+            <label>Name: <input type="text" name="name"></label>
+            <label>Email: <input type="email" name="email"></label>
+            <label>Phone number: <input type="tel" name="tel"></label>
+            <label>age: <input type="number" name="age"></label>
+            <label>Date of birth : <input type="date" name="dob"></label>
+            <h5>Select a gender</h5>
+            <label>Male<input type="radio" name="gender" value="Male"></label>
+            <label>Female<input type="radio" name="gender" value="Female"></label>
+            <label>Other<input type="radio" name="gender" value="Other"></label>
+            <h5>Favourite cuisine :</h5>
+            <label>French<input type="checkbox" name="cuisine[]" value="French"></label>
+            <label>Italian<input type="checkbox" name="cuisine[]" value="Italian"></label>
+            <label>Spanish<input type="checkbox" name="cuisine[]" value="Spanish"></label>
+            <label>Arabic<input type="checkbox" name="cuisine[]" value="Arabic"></label>
+            <label>Pick a favourite apron color: <input type="color" name="apron"></label>
+            <label>Biography: <br> <textarea name="bio"></textarea></label>
+            <label>Upload your favourite recipe: <br> <input type="file" name="upload"></label>
+            <label>Url to favourite recipe: <input type="url" name="url"></label>
+            <label><input type="reset"></label>
+            <label><input type="submit" name="submit"></label>
+
+
+
+
+
+        </form>
+
+
+    </main>
+</body>
+<footer class="extra">
+    <a href="over_ons.html">
+        <h3>Over</h3>
+    </a>
+    <a href="help.html">
+        <h3>Help</h3>
+    </a>
+</footer>
+
+</html>
