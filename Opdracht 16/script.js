@@ -1,6 +1,6 @@
-
-const paintWalls = function (paintColor, wallPicker) {
+const paintWalls = function (wallPicker, paintColor) {
     console.log("The", wallPicker, "has been painted", paintColor);
 };
 
-paintWalls("red", "north wall");
+paintWalls("north wall", "red");
+
