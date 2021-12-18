@@ -33,3 +33,16 @@ console.log("The total price including VAT is:", Math.round(totalPrice(1000, 1.2
 
 // Part 3 VAT excercise 2
 
+const calculateBasePrice = function(priceIncludingVAT, VATPercentage) {
+    const basePrice = priceIncludingVAT / ((100 + VATPercentage) / 100);
+    return basePrice;
+};
+
+const calculateBasePriceAndVAT = function(priceIncludingVAT, VATPercentage) {
+    const basePrice = calculateBasePrice(priceIncludingVAT, VATPercentage);
+    const VAT = priceIncludingVAT - basePrice;
+    return [basePrice, VAT];
+};
+
+console.log(calculateBasePriceAndVAT(1210, 21)); // [1000, 210]
+console.log(calculateBasePriceAndVAT(2.18, 9)); // [2, 0.18]
