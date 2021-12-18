@@ -45,4 +45,3 @@ const calculateBasePriceAndVAT = function(priceIncludingVAT, VATPercentage) {
 };
 
 console.log(calculateBasePriceAndVAT(1210, 21));
-console.log(calculateBasePriceAndVAT(2.18, 9));
