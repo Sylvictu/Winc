@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game</title>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        const start = true;
+        while (start) {
+            let username = prompt("Please enter your username")
+            alert("Hello " + username)
+            let min = prompt("choose a min number to play with")
+            //not working
+            let minInt = parseInt(min);
+            let max = prompt("choose a max number to play with")
+            //not working
+            let maxInt = parseInt(max);
+            let randomNumber = Math.floor(Math.random() * (maxInt - minInt) + minInt);
+            let times = 0;
+
+            while (times < 5) {
+                let guess = prompt("Guess the number between " + minInt + " and " + maxInt + " You have used " + times + " guesses out of 5");
+                let guessInt = parseInt(guess);
+                if (guessInt == randomNumber && times < 5) {
+                    times++;
+                    alert("You got it in "
+                        + times + " tries" + " Restarting the game ")
+                    break
+
+
+                }
+                else if (guessInt > randomNumber) {
+                    times++;
+                    alert("try a smaller number, you guessed " + times + " times");
+                }
+                else if (guessInt < randomNumber) {
+                    times++;
+                    alert("try a bigger number, you guessed " + times + " times")
+                }
+            }
+            if (times == 5) {
+                alert("you ran out of tries, Restarting the game");
+                /* let again = prompt("Do you wish to restart the game? Yes or No")
+                 if (again == "null" || again == "no" || again == "No" || again == null) {
+                     window.close();
+                 }
+ */
+            }
+        }
+    </script>
+</body>
+
+</html>
